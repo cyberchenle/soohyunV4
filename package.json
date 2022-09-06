@@ -4,15 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
+    "cmds": "nodemon ./deploy-commands.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "juno",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/rest": "^1.1.0",
     "canvas": "^2.9.3",
     "discord.js": "^14.3.0",
     "dotenv": "^16.0.1",
     "sequelize": "^6.21.4"
+  },
+  "engines": {
+    "node": "^18.8.0",
+    "npm": "^8.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
