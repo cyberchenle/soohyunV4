@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 const http = require('http');
 
-const server = http.createServer(...);
+const server = http.createServer();
 server.listen(port);
 
 const client = new Client({ presence: {status: 'idle', activities: [{name: 'Haikyuu', type: ActivityType.Watching} ]},
