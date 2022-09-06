@@ -1,13 +1,6 @@
 const { Client, GatewayIntentBits, Partials, Collection, ActivityType } = require('discord.js');
 require('dotenv').config();
 
-const port = process.env.PORT || 3000;
-
-const http = require('http');
-
-const server = http.createServer();
-server.listen(port);
-
 const client = new Client({ presence: {status: 'idle', activities: [{name: 'Haikyuu', type: ActivityType.Watching} ]},
 intents: [
     GatewayIntentBits.Guilds,
